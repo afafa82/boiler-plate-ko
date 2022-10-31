@@ -24,7 +24,7 @@ app.get("/", (req, res) => res.send("Hello World and I am Youngil"));
 
 app.get('/api/hello', (req,res) => {
   
-  res.send("안녕 ")
+  res.send("Server에서 잘 된거야, 안녕 ")
 })
 
 app.post("/api/users/register", (req, res) => {

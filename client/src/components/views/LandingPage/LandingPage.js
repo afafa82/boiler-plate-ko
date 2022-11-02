@@ -28,7 +28,7 @@ function LandingPage(props) {
       }}
     >
       시작페이지
-      <button onClick={onClickHandler}>로그아웃</button>
+      <button onClick={onClickHandler}>로그아</button>
     </div>
   );
 }

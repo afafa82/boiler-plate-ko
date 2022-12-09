@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { loginUser } from "../../../_actions/user_action";
 import {useNavigate} from 'react-router-dom';  // react-router-dom v6부터 useHistory에서 useNavigate로 바뀜
-
+import Auth from '../../../hoc/auth'
 function LoginPage(props) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -24,6 +24,7 @@ function LoginPage(props) {
       email: Email,
       password: Password,
     };
+    //loginUser Action 
     dispatch(loginUser(body)).then((response) => {
       if (response.payload.loginSuccess) {
         navigate("/");
@@ -58,4 +59,4 @@ function LoginPage(props) {
   );
 }
 
-export default LoginPage;
+export default Auth(LoginPage, false);

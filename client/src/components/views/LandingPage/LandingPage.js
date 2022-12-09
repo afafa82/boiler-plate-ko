@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
+import Auth from "../../../hoc/auth";
 function LandingPage(props) {
   const navigate = useNavigate();
   useEffect(() => {
@@ -28,9 +28,9 @@ function LandingPage(props) {
       }}
     >
       시작페이지
-      <button onClick={onClickHandler}>로그아</button>
+      <button onClick={onClickHandler}>로그아웃</button>
     </div>
   );
 }
 
-export default LandingPage;
+export default Auth(LandingPage, null);

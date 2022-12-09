@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { registerUser } from "../../../_actions/user_action";
 import { useNavigate } from "react-router-dom"; // react-router-dom v6부터 useHistory에서 useNavigate로 바뀜
-
+import Auth from "../../../hoc/auth";
 function RegisterPage(props) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -78,4 +78,4 @@ function RegisterPage(props) {
   );
 }
 
-export default RegisterPage;
+export default Auth(RegisterPage, false);

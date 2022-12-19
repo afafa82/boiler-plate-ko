@@ -59,20 +59,20 @@ function RegisterPage(props) {
         onSubmit={onSubmitHandler}
       >
         <label>Email</label>
-        <input type="email" value={Email} onChange={onEmailHandler} />
+        <input type="email" style={{border: "1px solid"}} value={Email} onChange={onEmailHandler} />
         <label>Name</label>
-        <input type="text" value={Name} onChange={onNameHandler} />
+        <input type="text" style={{border: "1px solid"}}value={Name} onChange={onNameHandler} />
         <label>Password</label>
-        <input type="password" value={Password} onChange={onPasswordHandler} />
+        <input type="password" style={{border: "1px solid"}}value={Password} onChange={onPasswordHandler} />
 
         <label>Confirm Password</label>
         <input
-          type="password"
+          type="password"style={{border: "1px solid"}}
           value={ConfirmPassword}
           onChange={onConfirmPasswordHandler}
         />
         <br />
-        <button type="submit">회원가입</button>
+        <button style={{cursor:"pointer"}} type="submit">회원가입</button>
       </form>
     </div>
   );

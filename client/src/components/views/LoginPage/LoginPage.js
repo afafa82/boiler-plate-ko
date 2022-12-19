@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { loginUser } from "../../../_actions/user_action";
-import {useNavigate} from 'react-router-dom';  // react-router-dom v6부터 useHistory에서 useNavigate로 바뀜
-import Auth from '../../../hoc/auth'
+import { useNavigate } from "react-router-dom"; // react-router-dom v6부터 useHistory에서 useNavigate로 바뀜
+import Auth from "../../../hoc/auth";
 function LoginPage(props) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ function LoginPage(props) {
       email: Email,
       password: Password,
     };
-    //loginUser Action 
+    //loginUser Action
     dispatch(loginUser(body)).then((response) => {
       if (response.payload.loginSuccess) {
         navigate("/");
@@ -49,9 +49,9 @@ function LoginPage(props) {
         onSubmit={onSubmitHandler}
       >
         <label>Email</label>
-        <input type="email" value={Email} onChange={onEmailHandler} />
+        <input type="email" style={{border: "1px solid"}} value={Email} onChange={onEmailHandler} />
         <label>Password</label>
-        <input type="password" value={Password} onChange={onPasswordHandler} />
+        <input type="password" style={{border: "1px solid"}}value={Password} onChange={onPasswordHandler} />
         <br />
         <button type="submit">Login</button>
       </form>

@@ -18,8 +18,11 @@
 1. dev.js file을 config 폴더 안에 생성해주세요.
 <br/>
 2. mongoDB 정보를 dev.js file안에다가 넣어주세요.
+<br/>
 example:
+<br/>
 - dev.js
+<br/>
 module.exports = {
     mongoURI:'mongodb+srv://ID:password@cluster0.brjrk.mongodb.net/?retryWrites=true&w=majority'
 }

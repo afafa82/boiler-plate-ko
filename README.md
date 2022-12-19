@@ -6,9 +6,9 @@
 	<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />
     <img src="https://img.shields.io/badge/Visual-5C2D91?style=flat&logo=Visual&logoColor=white" />
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white" />
+<img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=afafa82&layout=compact"><br><br>
+<img src="https://github-readme-stats.vercel.app/api?username=afafa82&show_icons=true">
 </div>
-<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=afafa82&layout=compact"><br><br>
-<img align="center" src="https://github-readme-stats.vercel.app/api?username=afafa82&show_icons=true">
 1. dev.js file을 config 폴더 안에 생성해주세요.
 2. mongoDB 정보를 dev.js file안에다가 넣어주세요.
 example:

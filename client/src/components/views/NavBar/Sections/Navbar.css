@@ -97,7 +97,7 @@ ul.ant-menu-overflow.ant-menu.ant-menu-root.ant-menu-horizontal.ant-menu-light {
     margin: 0 !important
 }
 .menu_right{
-    padding: 3px;
+    padding: 4.5px;
 }
 /* Signin, Singup 가로로 보여줄지, 세로로 보여줄지 정할 수 있음.
 ul.ant-menu.ant-menu-root.ant-menu-vertical.ant-menu-light {

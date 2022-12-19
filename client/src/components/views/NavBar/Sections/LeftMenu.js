@@ -8,7 +8,7 @@ const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
 function LeftMenu(props) {
-  const navigation = useNavigate();
+  const navigate = useNavigate();
   return (
     // <Menu
     //   mode={props.mode}
@@ -17,14 +17,18 @@ function LeftMenu(props) {
     //     { label: "Favorite", key: "favorite", icon: <DashboardOutlined />},
     //   ]}
     // ></Menu>
-    <Menu mode={props.mode}>
-      <Menu.Item key="mail">
-      <HomeFilled /><a href="/">Home</a>
-      </Menu.Item>
-      <Menu.Item key="favorite">
-      <DashboardOutlined /><a href="/favorite">Favorite</a>
-      </Menu.Item>
-    </Menu>
+    <Menu
+      mode={props.mode}
+      onClick={({ key }) => {
+        if (key !== "/logout") {
+          navigate(key);
+        }
+      }}
+      items={[
+        { label: "Home", key: "/", icon: <HomeFilled /> },
+        { label: "Favorite", key: "/favorite", icon: <DashboardOutlined /> },
+      ]}
+    ></Menu>
   );
 }
 

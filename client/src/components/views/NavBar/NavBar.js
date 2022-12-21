@@ -17,6 +17,7 @@ function NavBar() {
   };
 
   return (
+    <div style={{height:"49px"}}>
     <nav
       className="menu"
       style={{ position: "fixed", zIndex: 5, width: "100%" }}
@@ -50,6 +51,7 @@ function NavBar() {
         </Drawer>
       </div>
     </nav>
+    </div>
   );
 }
 
